@@ -9,7 +9,7 @@ public class Main {
         crimeAndPunishment.setYearIssue(1900);
         System.out.println(crimeAndPunishment.getName()+","+crimeAndPunishment.getYearIssue()+","+crimeAndPunishment.getAuthor()+".");
         System.out.println(deadSouls.getName()+","+deadSouls.getYearIssue()+","+ deadSouls.getAuthor()+".");
-
+        System.out.println();
 
     }
 
