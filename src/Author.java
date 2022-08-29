@@ -12,6 +12,6 @@ public class Author {
         return this.lastNameAuthor;
     }
     public String toString(){
-        return " Автор - " + nameAuthor +" " + lastNameAuthor;
+        return " Автор - " + getNameAuthor()+" " + getLastNameAuthor();
     }
 }
