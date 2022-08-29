@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        Book сrimeAndPunishment= new Book(" Преступление и наказание", 1866);
-        Book deadSouls= new Book(" Мертвые души", 1842);
-        Author dostoevskii = new Author("Достоевский", "Федор Михайлович");
-        Author gogol = new Author(" Гоголь", " Николай Васильевич");
-        System.out.println(сrimeAndPunishment.getName()+","+сrimeAndPunishment.getYearIssue()+","+dostoevskii.getNameAuthor()+" "+dostoevskii.getLastNameAuthor()+".");
-        сrimeAndPunishment.setYearIssue(1900);
-        System.out.println(сrimeAndPunishment.getName()+","+сrimeAndPunishment.getYearIssue()+","+dostoevskii.getNameAuthor()+" "+dostoevskii.getLastNameAuthor()+".");
-        System.out.println(deadSouls.getName()+","+deadSouls.getYearIssue()+","+gogol.getNameAuthor()+" "+gogol.getLastNameAuthor()+".");
+        var dostoevskii = new Author("Достоевский", "Федор Михайлович");
+        var gogol = new Author(" Гоголь", " Николай Васильевич");
+        var crimeAndPunishment= new Book(" Преступление и наказание", dostoevskii ,1866);
+        var deadSouls= new Book(" Мертвые души",gogol   ,1842);
+        System.out.println(crimeAndPunishment.getName()+","+crimeAndPunishment.getYearIssue()+",");
+        crimeAndPunishment.setYearIssue(1900);
+        System.out.println(crimeAndPunishment.getName()+","+crimeAndPunishment.getYearIssue()+","+crimeAndPunishment.getAuthor()+".");
+        System.out.println(deadSouls.getName()+","+deadSouls.getYearIssue()+","+ deadSouls.getAuthor()+".");
+
+
     }
 
 
