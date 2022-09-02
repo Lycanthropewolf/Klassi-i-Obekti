@@ -12,6 +12,10 @@ public class Main {
         System.out.println(crimeAndPunishment.toString());
         System.out.println(deadSouls.equals(deadSouls1));
         System.out.println(deadSouls.equals(crimeAndPunishment));
+        System.out.println(dostoevskii.hashCode()==gogol.hashCode());
+        System.out.println(crimeAndPunishment.hashCode()== deadSouls.hashCode());
+        deadSouls.setYearIssue(1900);
+        System.out.println(deadSouls.hashCode()==crimeAndPunishment.hashCode());
 
     }
 

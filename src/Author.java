@@ -22,7 +22,22 @@ public class Author {
         return ", Автор - " + getNameAuthor() + " " + getLastNameAuthor();
     }
 
-    public int hashCode(){
+    public boolean equals(Author other) {
+        if (other == null) {
+            return false;
+
+        } else if (other.getClass() != this.getClass()) {
+            return false;
+
+        } else if ((this.getNameAuthor() != other.getNameAuthor()) && (this.getLastNameAuthor() != other.getLastNameAuthor())) {
+            return false;
+
+
+        } else
+            return true;
+    }
+
+    public int hashCode() {
         return Objects.hash(getNameAuthor().length());
     }
 }

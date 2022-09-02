@@ -25,13 +25,14 @@ public class Book {
         return yearIssue;
     }
 
+    public void setYearIssue(int yearIssue) {
+        this.yearIssue = yearIssue;
+    }
     public String toString() {
         return " Название книги - " + getName() + ", Год издания - " + getYearIssue() + getAuthor();
     }
 
-    public void setYearIssue(int yearIssue) {
-        this.yearIssue = yearIssue;
-    }
+
 
     public boolean equals(Book other) {
         if (other == null) {
