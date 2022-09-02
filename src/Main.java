@@ -5,11 +5,17 @@ public class Main {
         var gogol = new Author(" Гоголь", " Николай Васильевич");
         var crimeAndPunishment= new Book(" Преступление и наказание", dostoevskii ,1866);
         var deadSouls= new Book(" Мертвые души",gogol   ,1842);
+        var deadSouls1= new Book(" Мертвые души",gogol   ,1842);
         System.out.println(crimeAndPunishment.getName()+","+crimeAndPunishment.getYearIssue()+",");
         crimeAndPunishment.setYearIssue(1900);
-        System.out.println(crimeAndPunishment.getName()+","+crimeAndPunishment.getYearIssue()+","+crimeAndPunishment.getAuthor()+".");
-        System.out.println(deadSouls.getName()+","+deadSouls.getYearIssue()+","+ deadSouls.getAuthor()+".");
-
+        System.out.println(deadSouls.toString());
+        System.out.println(crimeAndPunishment.toString());
+        System.out.println(deadSouls.equals(deadSouls1));
+        System.out.println(deadSouls.equals(crimeAndPunishment));
+        System.out.println(dostoevskii.hashCode()==gogol.hashCode());
+        System.out.println(crimeAndPunishment.hashCode()== deadSouls.hashCode());
+        deadSouls.setYearIssue(1900);
+        System.out.println(deadSouls.hashCode()==crimeAndPunishment.hashCode());
 
     }
 
